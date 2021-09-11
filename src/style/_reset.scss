@@ -1,0 +1,57 @@
+//imports
+//@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+//@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+// variables
+$gray: #161617;
+$gradient: linear-gradient(to right, #005e7f, #61b6cd);
+
+// General Designs
+html,
+body {
+  overflow-x: hidden;
+  //font-family: "Inter", sans-serif;
+  //font-family: "Source Sans Pro", sans-serif;
+  font-family: "Poppins", sans-serif;
+  background: #000 !important;
+}
+* {
+  color: #f1f1f1e7;
+}
+*::selection {
+  background: #f1f1f1e7;
+  color: #000;
+  -webkit-text-fill-color: #f1f1f1e7;
+}
+ul {
+  list-style: none;
+}
+button,
+input,
+a {
+  border: none;
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+button {
+  background: #0071e3;
+  color: #fff;
+}
+input {
+  background: $gray;
+}
+video {
+  pointer-events: none;
+}
+.container {
+  width: 80% !important;
+}
+
+@media (max-width: 555px) {
+  .container {
+    width: 90% !important;
+  }
+}
